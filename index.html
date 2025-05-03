@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant E-commerce Website</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="index.html">LUXE</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-controls">
+          <button class="search-toggle" aria-label="Search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <a href="cart.html" class="cart-icon" aria-label="View cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="search-container">
+        <div class="search-form-wrapper">
+          <form class="search-form">
+            <input type="text" placeholder="Search for products..." aria-label="Search">
+            <button type="submit" aria-label="Submit search">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <button class="search-close" aria-label="Close search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Elegance in Every Detail</h1>
+          <p>Discover our curated collection of premium products designed to elevate your lifestyle.</p>
+          <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-categories">
+      <div class="container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+          <a href="products.html?category=clothing" class="category-card">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/1346181/pexels-photo-1346181.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Clothing category">
+            </div>
+            <h3>Clothing</h3>
+          </a>
+          <a href="products.html?category=accessories" class="category-card">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/1374910/pexels-photo-1374910.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Accessories category">
+            </div>
+            <h3>Accessories</h3>
+          </a>
+          <a href="products.html?category=home" class="category-card">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/945688/pexels-photo-945688.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Home decor category">
+            </div>
+            <h3>Home</h3>
+          </a>
+          <a href="products.html?category=beauty" class="category-card">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Beauty category">
+            </div>
+            <h3>Beauty</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid" id="featured-products">
+          <!-- Products will be loaded dynamically via JavaScript -->
+          <div class="product-loader">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-banner">
+      <div class="container">
+        <div class="promo-content">
+          <h2>Summer Collection</h2>
+          <p>Exclusive pieces for the season</p>
+          <a href="products.html?collection=summer" class="btn btn-secondary">View Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <p>"The quality of products is exceptional. I'm extremely satisfied with my purchase and will definitely be ordering again."</p>
+              <div class="testimonial-author">
+                <p class="author-name">Emily Johnson</p>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <p>"Fast shipping and the product exceeded my expectations. This is my go-to shop for high-quality items."</p>
+              <div class="testimonial-author">
+                <p class="author-name">Michael Roberts</p>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <p>"The attention to detail in their products is remarkable. Customer service was also excellent when I had questions."</p>
+              <div class="testimonial-author">
+                <p class="author-name">Sarah Thompson</p>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">☆</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="prev-testimonial" aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="testimonial-indicators">
+              <button class="indicator active" aria-label="Go to testimonial 1"></button>
+              <button class="indicator" aria-label="Go to testimonial 2"></button>
+              <button class="indicator" aria-label="Go to testimonial 3"></button>
+            </div>
+            <button class="next-testimonial" aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>Subscribe to our newsletter for exclusive offers and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">LUXE</div>
+          <p>Curated premium products for discerning customers who appreciate quality and elegance.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"></path><path d="M12 8v8"></path><circle cx="12" cy="12" r="10"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html?category=clothing">Clothing</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+            <li><a href="products.html?category=home">Home</a></li>
+            <li><a href="products.html?category=beauty">Beauty</a></li>
+            <li><a href="products.html?collection=new">New Arrivals</a></li>
+            <li><a href="products.html?collection=sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#sustainability">Sustainability</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping & Returns</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LUXE. All rights reserved.</p>
+        <div class="payment-methods">
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>American Express</span>
+          <span>PayPal</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

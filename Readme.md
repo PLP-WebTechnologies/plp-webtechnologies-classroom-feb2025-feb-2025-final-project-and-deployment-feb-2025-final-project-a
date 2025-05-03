@@ -1,5 +1,8 @@
 # Final Project and Deployment
 
+# Link to the website
+https://flourishing-lollipop-75a747.netlify.app
+
 ## Objectives
 Build a fully functional web application.
 Apply HTML, CSS, and JavaScript concepts learned.

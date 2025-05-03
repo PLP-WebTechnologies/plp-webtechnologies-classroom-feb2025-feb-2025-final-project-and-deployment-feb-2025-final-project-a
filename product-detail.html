@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - LUXE</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/product-detail.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="index.html">LUXE</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-controls">
+          <button class="search-toggle" aria-label="Search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <a href="cart.html" class="cart-icon" aria-label="View cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="search-container">
+        <div class="search-form-wrapper">
+          <form class="search-form">
+            <input type="text" placeholder="Search for products..." aria-label="Search">
+            <button type="submit" aria-label="Submit search">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <button class="search-close" aria-label="Close search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="product-detail-section">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> / <a href="products.html">Shop</a> / <span id="product-breadcrumb">Product</span>
+        </div>
+        
+        <div class="product-detail" id="product-detail">
+          <div class="product-gallery">
+            <div class="main-image">
+              <img src="https://images.pexels.com/photos/1374910/pexels-photo-1374910.jpeg?auto=compress&cs=tinysrgb&w=1200" id="main-product-image" alt="Product image">
+            </div>
+            <div class="thumbnail-images">
+              <button class="thumbnail active" aria-label="View image 1">
+                <img src="https://images.pexels.com/photos/1374910/pexels-photo-1374910.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Thumbnail 1">
+              </button>
+              <button class="thumbnail" aria-label="View image 2">
+                <img src="https://images.pexels.com/photos/1212458/pexels-photo-1212458.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Thumbnail 2">
+              </button>
+              <button class="thumbnail" aria-label="View image 3">
+                <img src="https://images.pexels.com/photos/1346181/pexels-photo-1346181.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Thumbnail 3">
+              </button>
+              <button class="thumbnail" aria-label="View image 4">
+                <img src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Thumbnail 4">
+              </button>
+            </div>
+          </div>
+          
+          <div class="product-info">
+            <h1 id="product-title">Elegant Gold Necklace</h1>
+            <div class="product-meta">
+              <div class="product-rating">
+                <span class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star half">★</span>
+                </span>
+                <span class="rating-count">(42 reviews)</span>
+              </div>
+              <span class="product-sku">SKU: <span id="product-sku">LX-1234</span></span>
+            </div>
+            
+            <div class="product-price">
+              <span class="current-price" id="product-price">$129.00</span>
+              <span class="original-price" id="product-original-price">$159.00</span>
+            </div>
+            
+            <div class="product-description">
+              <p id="product-description">This elegant gold-plated necklace features a delicate pendant design with hand-set crystals. The perfect accessory to elevate any outfit, from casual to formal wear. The 18-inch chain includes a 2-inch extender for adjustable length.</p>
+            </div>
+            
+            <div class="product-options">
+              <div class="option-group">
+                <label for="product-color">Color</label>
+                <div class="color-options">
+                  <button class="color-option active" data-color="gold" aria-label="Gold" style="background-color: #D4AF37;"></button>
+                  <button class="color-option" data-color="silver" aria-label="Silver" style="background-color: #C0C0C0;"></button>
+                  <button class="color-option" data-color="rose-gold" aria-label="Rose Gold" style="background-color: #B76E79;"></button>
+                </div>
+              </div>
+              
+              <div class="option-group">
+                <label for="product-quantity">Quantity</label>
+                <div class="quantity-selector">
+                  <button class="quantity-decrease" aria-label="Decrease quantity">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </button>
+                  <input type="number" id="product-quantity" value="1" min="1" max="10" aria-label="Product quantity">
+                  <button class="quantity-increase" aria-label="Increase quantity">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="product-actions">
+              <button class="btn btn-primary add-to-cart" id="add-to-cart">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                Add to Cart
+              </button>
+              <button class="btn btn-outline wishlist-btn" aria-label="Add to wishlist">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            
+            <div class="product-meta-info">
+              <div class="meta-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                <span>Free shipping on orders over $50</span>
+              </div>
+              <div class="meta-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Usually ships within 1-2 business days</span>
+              </div>
+              <div class="meta-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                <span>30-day return policy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-tabs">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="description">Description</button>
+          <button class="tab-btn" data-tab="details">Details</button>
+          <button class="tab-btn" data-tab="reviews">Reviews (42)</button>
+        </div>
+        
+        <div class="tab-content">
+          <div class="tab-pane active" id="description">
+            <p>This elegant gold-plated necklace features a delicate pendant design with hand-set crystals. The perfect accessory to elevate any outfit, from casual to formal wear.</p>
+            <p>The 18-inch chain includes a 2-inch extender for adjustable length. Each piece is carefully crafted with attention to detail, ensuring both beauty and durability.</p>
+            <p>Our jewelry is designed in our studio in Paris and produced by skilled artisans using the finest materials. The necklace comes in a beautiful gift box, making it perfect for gifting to someone special or treating yourself.</p>
+            <h3>Features</h3>
+            <ul>
+              <li>18K gold-plated brass</li>
+              <li>Hand-set crystals</li>
+              <li>Adjustable 18-20 inch chain length</li>
+              <li>Lobster clasp closure</li>
+              <li>Hypoallergenic</li>
+              <li>Tarnish-resistant finish</li>
+            </ul>
+          </div>
+          
+          <div class="tab-pane" id="details">
+            <h3>Product Information</h3>
+            <table class="details-table">
+              <tr>
+                <th>Material</th>
+                <td>18K gold-plated brass</td>
+              </tr>
+              <tr>
+                <th>Chain Length</th>
+                <td>18 inches + 2-inch extender</td>
+              </tr>
+              <tr>
+                <th>Pendant Size</th>
+                <td>0.75 inches</td>
+              </tr>
+              <tr>
+                <th>Closure</th>
+                <td>Lobster clasp</td>
+              </tr>
+              <tr>
+                <th>Stone Type</th>
+                <td>Cubic zirconia</td>
+              </tr>
+              <tr>
+                <th>Care Instructions</th>
+                <td>Store in the provided pouch. Avoid contact with water, perfume, and chemicals.</td>
+              </tr>
+              <tr>
+                <th>Origin</th>
+                <td>Designed in Paris, France</td>
+              </tr>
+              <tr>
+                <th>Packaging</th>
+                <td>Comes in a gift box with jewelry pouch</td>
+              </tr>
+            </table>
+          </div>
+          
+          <div class="tab-pane" id="reviews">
+            <div class="review-summary">
+              <div class="average-rating">
+                <span class="big-rating">4.5</span>
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star half">★</span>
+                </div>
+                <span>Based on 42 reviews</span>
+              </div>
+              
+              <div class="rating-distribution">
+                <div class="rating-bar">
+                  <span class="rating-label">5 stars</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 70%"></div>
+                  </div>
+                  <span class="rating-percent">70%</span>
+                </div>
+                <div class="rating-bar">
+                  <span class="rating-label">4 stars</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 20%"></div>
+                  </div>
+                  <span class="rating-percent">20%</span>
+                </div>
+                <div class="rating-bar">
+                  <span class="rating-label">3 stars</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 7%"></div>
+                  </div>
+                  <span class="rating-percent">7%</span>
+                </div>
+                <div class="rating-bar">
+                  <span class="rating-label">2 stars</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 2%"></div>
+                  </div>
+                  <span class="rating-percent">2%</span>
+                </div>
+                <div class="rating-bar">
+                  <span class="rating-label">1 star</span>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 1%"></div>
+                  </div>
+                  <span class="rating-percent">1%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="reviews-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="review-author">
+                    <span class="author-name">Jennifer L.</span>
+                    <div class="review-rating">
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                    </div>
+                  </div>
+                  <span class="review-date">May 12, 2025</span>
+                </div>
+                <h4 class="review-title">Absolutely stunning piece!</h4>
+                <p class="review-content">This necklace exceeded my expectations! The craftsmanship is exquisite and it looks much more expensive than what I paid. I've received so many compliments when wearing it. It's the perfect accessory for both casual and formal outfits.</p>
+                <div class="review-photos">
+                  <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Customer review photo">
+                </div>
+              </div>
+              
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="review-author">
+                    <span class="author-name">Michael T.</span>
+                    <div class="review-rating">
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">☆</span>
+                    </div>
+                  </div>
+                  <span class="review-date">April 28, 2025</span>
+                </div>
+                <h4 class="review-title">Beautiful gift!</h4>
+                <p class="review-content">I purchased this necklace as a gift for my wife's birthday. She absolutely loves it! The packaging was beautiful and the necklace itself is high quality. Taking off one star only because shipping took longer than expected, but it was worth the wait.</p>
+              </div>
+              
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="review-author">
+                    <span class="author-name">Sarah K.</span>
+                    <div class="review-rating">
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                    </div>
+                  </div>
+                  <span class="review-date">April 15, 2025</span>
+                </div>
+                <h4 class="review-title">Elegant and versatile</h4>
+                <p class="review-content">This necklace has quickly become my go-to accessory. It's delicate yet makes a statement. The adjustable chain is a really nice feature as it allows me to wear it at different lengths depending on my outfit. Would definitely recommend!</p>
+              </div>
+              
+              <div class="load-more-reviews">
+                <button class="btn btn-outline">Load More Reviews</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-products">
+      <div class="container">
+        <h2 class="section-title">You May Also Like</h2>
+        <div class="products-row" id="related-products">
+          <!-- Related products will be loaded dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">LUXE</div>
+          <p>Curated premium products for discerning customers who appreciate quality and elegance.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"></path><path d="M12 8v8"></path><circle cx="12" cy="12" r="10"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html?category=clothing">Clothing</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+            <li><a href="products.html?category=home">Home</a></li>
+            <li><a href="products.html?category=beauty">Beauty</a></li>
+            <li><a href="products.html?collection=new">New Arrivals</a></li>
+            <li><a href="products.html?collection=sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#sustainability">Sustainability</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html#press">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping & Returns</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LUXE. All rights reserved.</p>
+        <div class="payment-methods">
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>American Express</span>
+          <span>PayPal</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
