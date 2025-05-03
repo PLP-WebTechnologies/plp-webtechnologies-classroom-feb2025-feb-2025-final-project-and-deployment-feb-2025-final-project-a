@@ -1,5 +1,7 @@
 # Final Project and Deployment
 
+# Link to thw website
+ https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-MADEDECHADWICK/
 ## Objectives
 Build a fully functional web application.
 Apply HTML, CSS, and JavaScript concepts learned.
