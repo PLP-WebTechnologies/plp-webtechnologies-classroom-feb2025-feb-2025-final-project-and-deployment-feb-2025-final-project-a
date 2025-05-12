@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kina Bosco Paradiso - Home</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Kina Bosco Paradiso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Your One-Stop Shop for Pet Products</h2>
+            <p>Discover the best food, toys, and accessories for your furry friends.</p>
+            <button onclick="scrollToFeatured()">Explore Now</button>
+        </section>
+        <section id="featured-products" class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-slider">
+                <div class="slide">
+                    <img src="../assets/images/pet-food.jpg" alt="Pet Food">
+                    <p>Premium Pet Food</p>
+                </div>
+                <div class="slide">
+                    <img src="../assets/images/pet-toy.jpg" alt="Pet Toy">
+                    <p>Fun Pet Toy</p>
+                </div>
+                <div class="slide">
+                    <img src="../assets/images/pet-accessory.jpg" alt="Pet Accessory">
+                    <p>Stylish Pet Accessories</p>
+                </div>
+            </div>
+            <button id="prev" class="slider-btn">❮</button>
+            <button id="next" class="slider-btn">❯</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kina Bosco Paradiso. All rights reserved.</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
