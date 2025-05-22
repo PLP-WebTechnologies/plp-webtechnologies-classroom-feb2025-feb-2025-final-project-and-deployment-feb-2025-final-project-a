@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cart</title>
+      <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+      
+      <section id="headersection" class="headersection">
+            <header id="header" class="header">
+                  <div id="head-title">
+                        <div>
+                              <h1>omni-market</h1>
+                        </div>
+                        <div id="homediv">
+                              <div id="home">
+                                    home
+                              </div>
+                              <div>
+                                    products
+                              </div>
+                              <div>
+                                    contacts
+                              </div>
+                              <div>
+                                    help
+                              </div>
+                        </div>
+                  </div>
+                  <div class="headercart">
+                        <h1>Products In your Cart</h1>
+                  </div>
+            </header>
+      </section>
+
+      <section id="bodycontaner">
+            <div id="productdiv">
+                  <div id="imagepart">
+                        <img src="../images/products/athletic-cotton-socks-6-pairs.jpg" alt="clothes" id="imagediv">
+                  </div>
+                  <div id="detailscontainer">
+                        <div id="details">
+                              <p>Socks</p>
+                              <p>Price : Ksh 1900</p>
+                        </div>
+                        <div>
+                              <h4>Quantiy of products</h4>
+                              <p>10</p>
+                              <div id="buttondiv">
+                                    <button type="button" class="buttonadd">-</button>
+                                    <button type="button" class="buttonadd">+</button>
+                              </div>
+                              <div id="buybutton">
+                                    <button type="button" id="delete">remove</button>
+                              </div>
+                        </div>
+                  </div>
+                  
+            </div> 
+
+            <div id="productdiv">
+                  <div id="imagepart">
+                        <img src="../images/products/athletic-cotton-socks-6-pairs.jpg" alt="clothes" id="imagediv">
+                  </div>
+                  <div id="details">
+                        <p>Socks</p>
+                        <p>Price : Ksh 1900</p>
+                  </div>
+                  <div>
+                        <h4>Number of products you want</h4>
+                        <p>10</p>
+                        <div id="buttondiv">
+                              <button type="button" class="buttonadd">-</button>
+                              <button type="button" class="buttonadd">+</button>
+                        </div>
+                        <div id="buybutton">
+                              <button type="button" id="delete">remove</button>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <section class="othercontainer">
+            <div class="ordersummary">
+                        <div class="ordersummaryheader">
+                              <h2>Order summary</h2>
+                        </div>
+                        <div id="itemscount">
+                              <p>No.items : </p>
+                              <div > 5</div>
+                        </div>
+                        <div>
+                              <p>items Price (Ksh):  </p>
+                              <div>10000</div>
+                        </div>
+                        <div id="Delivery">
+                              <p>Delivery fee(Ksh) :</p>
+                              <div>2300</div>
+                        </div>
+                        <div id="Total">
+                              <p>Total order(Ksh)</p>
+                              <div>12300</div>
+                        </div>
+                        <div id="orderbutton">
+                                    <button type="button" id="placeorder">place your order</button>
+                        </div>
+            </div>
+            <div id="rating">
+                  <div>
+                        <h2>Rate Our Services</h2>
+                  </div>
+                  <div id="rate">5</div>
+                  <div>
+                        <input type="range" name="range" id="ratingrange" min="1" max="10" value="5">
+                  </div>
+            </div>
+      </section>
+
+      <script type="module" src="cart.js"></script>
+</body>
+</html>
