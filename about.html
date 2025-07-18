@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about TechStore - your trusted partner for premium electronics and cutting-edge technology">
+    <title>About Us - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>TechStore</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="about.html" class="nav-link active">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" id="cart-btn" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." class="search-input" id="search-input">
+                <button class="search-close" id="search-close">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">About TechStore</h1>
+                <p class="page-description">Pioneering the future of technology retail since 2020</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">About</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p class="lead">
+                        Founded in 2020 with a simple mission: to make cutting-edge technology accessible to everyone. 
+                        What started as a small online store has grown into a trusted destination for tech enthusiasts worldwide.
+                    </p>
+                    <p>
+                        We believe that technology has the power to transform lives, enhance productivity, and connect people 
+                        across the globe. That's why we carefully curate every product in our catalog, ensuring that we only 
+                        offer the highest quality electronics from the most innovative brands.
+                    </p>
+                    <p>
+                        From the latest smartphones and laptops to smart home devices and gaming accessories, we're committed 
+                        to bringing you the technology that matters most in today's digital world.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Modern technology workspace" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To democratize access to cutting-edge technology by providing high-quality products, 
+                        exceptional customer service, and competitive pricing that makes innovation accessible to all.
+                    </p>
+                </div>
+                
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be the world's most trusted technology retailer, known for our expertise, integrity, 
+                        and commitment to helping customers discover the perfect tech solutions for their lives.
+                    </p>
+                </div>
+                
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>
+                        Innovation, integrity, customer-centricity, and sustainability guide everything we do. 
+                        We're not just selling products; we're building lasting relationships with our community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50000">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1000">0</div>
+                    <div class="stat-label">Products Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                    <div class="stat-suffix">%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Support Available</div>
+                    <div class="stat-suffix">/7</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-description">The passionate people behind TechStore's success</p>
+            </header>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Arnold Kirui" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Arnold Kirui</h3>
+                        <p class="member-role">Founder & CEO</p>
+                        <p class="member-bio">
+                            Tech entrepreneur and visionary with a passion for making cutting-edge technology accessible to everyone. Leading TechStore with innovation and customer-first approach.
+                        </p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="tel:+254706830596" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Arnold Kirui - Tech Lead" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Arnold Kirui</h3>
+                        <p class="member-role">Chief Technology Officer</p>
+                        <p class="member-bio">
+                            Expert in product development and technical innovation. Ensures we deliver the latest technology solutions with exceptional quality and performance standards.
+                        </p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:arnold.kirui@techstore.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Why Choose TechStore?</h2>
+                <p class="section-description">What sets us apart in the world of technology retail</p>
+            </header>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Authentic Products</h3>
+                    <p>
+                        We guarantee 100% authentic products from authorized dealers. Every item comes with 
+                        manufacturer warranty and our quality assurance.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Shipping</h3>
+                    <p>
+                        Free shipping on orders over $50. Express delivery available. Most orders ship within 
+                        24 hours for quick delivery to your doorstep.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>
+                        Our tech experts are available 24/7 to help you choose the right products and provide 
+                        ongoing support for all your technology needs.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Easy Returns</h3>
+                    <p>
+                        30-day return policy with no questions asked. If you're not satisfied, we'll make it right 
+                        with hassle-free returns and exchanges.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure Shopping</h3>
+                    <p>
+                        Your privacy and security are our top priorities. We use industry-leading encryption 
+                        to protect your personal and payment information.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>
+                        Competitive pricing with price-match guarantee. We regularly review our prices to ensure 
+                        you get the best value for your money.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience the Future?</h2>
+                <p>Join thousands of satisfied customers who trust TechStore for their technology needs.</p>
+                <div class="cta-actions">
+                    <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <i class="fas fa-bolt"></i>
+                            <span>TechStore</span>
+                        </a>
+                        <p>Your trusted partner for the latest technology and electronics.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> support@techstore.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 TechStore. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" id="cart-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Total: $<span id="cart-total">0.00</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cart-close-btn">Continue Shopping</button>
+                <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

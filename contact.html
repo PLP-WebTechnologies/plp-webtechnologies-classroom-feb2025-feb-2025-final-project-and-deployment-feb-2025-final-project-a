@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with TechStore - Contact us for support, inquiries, or feedback">
+    <title>Contact Us - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>TechStore</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" id="cart-btn" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." class="search-input" id="search-input">
+                <button class="search-close" id="search-close">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-description">We'd love to hear from you. Get in touch with our team.</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Contact</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                <h2>Get In Touch with Arnold</h2>
+                    <p>Have a question or need assistance? I'm Arnold Kirui, and I'm here to help! Reach out to me through any of the following channels.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+254 706830596</p>
+                                <span class="contact-hours">Mon-Fri 8AM-8PM EAT</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>arnold.kirui@techstore.com</p>
+                                <span class="contact-hours">24/7 Response</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Address</h3>
+                                <p>Nairobi Tech Hub<br>Nairobi, Kenya</p>
+                                <span class="contact-hours">Visit our showroom</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Live Chat</h3>
+                                <p>Chat with our experts</p>
+                                <button class="chat-btn">Start Chat</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contact-form">
+                        <h2>Send us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="orders">Order Support</option>
+                                <option value="returns">Returns & Exchanges</option>
+                                <option value="billing">Billing Questions</option>
+                                <option value="partnerships">Business Partnerships</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter-opt" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates and special offers
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy-policy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Quick answers to common questions</p>
+            </header>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is your return policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy for all products. Items must be in original condition with all accessories and packaging. Simply contact our support team to initiate a return.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How long does shipping take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Standard shipping takes 3-5 business days. Express shipping (1-2 business days) is available for an additional fee. Free shipping is included on orders over $50.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer technical support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Our expert technical support team is available 24/7 via phone, email, or live chat to help with product setup, troubleshooting, and any technical questions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Are your products authentic?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We guarantee 100% authentic products from authorized dealers. All items come with manufacturer warranty and our authenticity guarantee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I track my order?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you'll receive a tracking number via email once your order ships. You can also track your order status in your account dashboard or contact support for updates.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer price matching?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer competitive pricing and will match verified lower prices from authorized retailers. Contact our sales team with the details and we'll review your request.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="hours-section">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-info">
+                    <h2>Business Hours</h2>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 6:00 PM EST</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 4:00 PM EST</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </div>
+                    </div>
+                    <p class="hours-note">
+                        <i class="fas fa-info-circle"></i>
+                        Email support is available 24/7 with responses within 2 hours during business hours.
+                    </p>
+                </div>
+                <div class="hours-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive Map</p>
+                        <span>123 Tech Street, Digital City</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <i class="fas fa-bolt"></i>
+                            <span>TechStore</span>
+                        </a>
+                        <p>Your trusted partner for the latest technology and electronics.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> support@techstore.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 TechStore. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" id="cart-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Total: $<span id="cart-total">0.00</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cart-close-btn">Continue Shopping</button>
+                <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

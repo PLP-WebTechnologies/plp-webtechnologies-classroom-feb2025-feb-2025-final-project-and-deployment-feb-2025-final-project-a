@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our complete collection of premium electronics and gadgets at TechStore">
+    <title>Products - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>TechStore</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="products.html" class="nav-link active">Products</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" id="cart-btn" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." class="search-input" id="search-input">
+                <button class="search-close" id="search-close">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Our Products</h1>
+                <p class="page-description">Discover our complete collection of cutting-edge technology and electronics</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Products</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar Filters -->
+                <aside class="products-sidebar">
+                    <div class="filter-section">
+                        <h3 class="filter-title">Categories</h3>
+                        <div class="filter-group">
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="all" checked>
+                                <span class="checkmark"></span>
+                                All Products
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="smartphones">
+                                <span class="checkmark"></span>
+                                Smartphones
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="laptops">
+                                <span class="checkmark"></span>
+                                Laptops
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="headphones">
+                                <span class="checkmark"></span>
+                                Audio
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="smart-home">
+                                <span class="checkmark"></span>
+                                Smart Home
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="tablets">
+                                <span class="checkmark"></span>
+                                Tablets
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="gaming">
+                                <span class="checkmark"></span>
+                                Gaming
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="wearables">
+                                <span class="checkmark"></span>
+                                Wearables
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="tvs">
+                                <span class="checkmark"></span>
+                                TVs & Displays
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="cameras">
+                                <span class="checkmark"></span>
+                                Cameras
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="home-appliances">
+                                <span class="checkmark"></span>
+                                Home Appliances
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="speakers">
+                                <span class="checkmark"></span>
+                                Speakers
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="automotive">
+                                <span class="checkmark"></span>
+                                Automotive
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="vr">
+                                <span class="checkmark"></span>
+                                VR/AR
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Price Range</h3>
+                        <div class="price-range">
+                            <div class="price-inputs">
+                                <input type="number" id="min-price" placeholder="Min" min="0" class="price-input">
+                                <span class="price-separator">-</span>
+                                <input type="number" id="max-price" placeholder="Max" min="0" class="price-input">
+                            </div>
+                            <button class="apply-price-filter" id="apply-price-filter">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Rating</h3>
+                        <div class="filter-group">
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="all" checked>
+                                <span class="checkmark"></span>
+                                All Ratings
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="4">
+                                <span class="checkmark"></span>
+                                4+ Stars
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="rating" value="4.5">
+                                <span class="checkmark"></span>
+                                4.5+ Stars
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="clear-filters" id="clear-filters">Clear All Filters</button>
+                </aside>
+
+                <!-- Products Content -->
+                <main class="products-content">
+                    <!-- Products Header -->
+                    <div class="products-header">
+                        <div class="products-count">
+                            <span id="products-count">Loading products...</span>
+                        </div>
+                        <div class="products-controls">
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid" title="Grid View">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list" title="List View">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                            <select class="sort-select" id="sort-select">
+                                <option value="default">Sort by</option>
+                                <option value="name">Name (A-Z)</option>
+                                <option value="price-low">Price (Low to High)</option>
+                                <option value="price-high">Price (High to Low)</option>
+                                <option value="rating">Rating</option>
+                                <option value="reviews">Most Reviewed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-container">
+                        <!-- Products will be loaded here -->
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="load-more-container">
+                        <button class="btn btn-outline" id="load-more" style="display: none;">
+                            Load More Products
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <i class="fas fa-bolt"></i>
+                            <span>TechStore</span>
+                        </a>
+                        <p>Your trusted partner for the latest technology and electronics.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> support@techstore.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 TechStore. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" id="cart-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Total: $<span id="cart-total">0.00</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cart-close-btn">Continue Shopping</button>
+                <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products-page.js"></script>
+</body>
+</html>

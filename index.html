@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechStore - Your one-stop shop for the latest technology and electronics">
+    <title>TechStore - Premium Electronics & Gadgets</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>TechStore</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" id="cart-btn" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Bar -->
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." class="search-input" id="search-input">
+                <button class="search-close" id="search-close">&times;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Discover the Latest in Technology</h1>
+                    <p class="hero-description">
+                        From cutting-edge smartphones to powerful laptops, find everything you need 
+                        to stay connected and productive in our digital world.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="products.html" class="btn btn-primary">Shop Now</a>
+                        <a href="#featured" class="btn btn-secondary">View Collection</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Latest Technology Products" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-description">Discover our most popular and cutting-edge products</p>
+            </header>
+            
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded dynamically -->
+            </div>
+            
+            <div class="text-center">
+                <a href="products.html" class="btn btn-outline">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-description">Find exactly what you're looking for</p>
+            </header>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="smartphones">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Smartphones</h3>
+                    <p>Latest models from top brands</p>
+                </div>
+                
+                <div class="category-card" data-category="laptops">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptops</h3>
+                    <p>Powerful computing solutions</p>
+                </div>
+                
+                <div class="category-card" data-category="headphones">
+                    <div class="category-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Audio</h3>
+                    <p>Premium sound experience</p>
+                </div>
+                
+                <div class="category-card" data-category="smart-home">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Smart Home</h3>
+                    <p>Connected living solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Get the latest news about new products and exclusive offers</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <i class="fas fa-bolt"></i>
+                            <span>TechStore</span>
+                        </a>
+                        <p>Your trusted partner for the latest technology and electronics.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 0706830596</p>
+                        <p><i class="fas fa-envelope"></i> support@techstore.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 452 Tech Street, Digital City</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 TechStore. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" id="cart-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Total: $<span id="cart-total">0.00</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cart-close-btn">Continue Shopping</button>
+                <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
