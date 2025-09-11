@@ -1,0 +1,30 @@
+// Supabase Configuration
+// Replace these with your actual Supabase project credentials
+const SUPABASE_URL = "YOUR_SUPABASE_URL";
+const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+
+// Initialize Supabase client
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// Database table names
+const TABLES = {
+  STORIES: "stories",
+  USERS: "users",
+  CATEGORIES: "categories",
+  STORY_ANALYTICS: "story_analytics",
+};
+
+// Story status constants
+const STORY_STATUS = {
+  DRAFT: "draft",
+  PENDING: "pending_review",
+  APPROVED: "approved",
+  REJECTED: "rejected",
+};
+
+// Export for use in other files
+window.UmojaConfig = {
+  supabase,
+  TABLES,
+  STORY_STATUS,
+};
