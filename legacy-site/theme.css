@@ -1,0 +1,124 @@
+/* Dark Mode Theme Variables */
+body.dark-mode {
+    --bg-main: #0f172a;
+    --bg-alt: #1e293b;
+    --bg-hover: #334155;
+    --highlight: #facc15;
+    --text-main: #e2e8f0;
+    --text-muted: #cbd5e1;
+    --text-soft: #f1f5f9;
+    --hover-accent: #3f17d1;
+  
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* General Containers */
+  .dark-mode header,
+  .dark-mode .navbar,
+  .dark-mode .site-footer,
+  .dark-mode .card,
+  .dark-mode .post-card,
+  .dark-mode section {
+    background-color: var(--bg-alt);
+    color: var(--text-main);
+  }
+  
+  /* Theme Toggle */
+  .theme-toggle,
+  .theme-toggle i {
+    color:  #facc15;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  /* Post Cards */
+  .dark-mode .post-card,
+  .dark-mode .card {
+    background-color: var(--bg-alt);
+    color: var(--text-main);
+  }
+  .dark-mode .post-card:hover {
+    background-color: var(--hover-accent);
+    border: 1px solid #475569;
+  }
+  
+  /* Post Content Colors */
+  .dark-mode .post-card .post-content h3,
+  .dark-mode .post-content h3 {
+    color: var(--highlight);
+  }
+  .dark-mode .post-card .post-content p,
+  .dark-mode .post-content .excerpt,
+  .dark-mode .post-content .date,
+  .dark-mode .breaking .ticker-wrapper .ticker {
+    color: var(--text-muted);
+  }
+  .dark-mode .post-card .post-content {
+    color: var(--text-soft);
+  }
+  
+  /* Specific Sections */
+  .dark-mode .entertainment-posts .post-card,
+  .dark-mode .tech-posts .post-card {
+    background-color: var(--bg-alt) !important;
+    color: var(--text-main) !important;
+  }
+  .dark-mode .entertainment-posts .post-content h3,
+  .dark-mode .tech-posts .post-content h3 {
+    color: var(--highlight) !important;
+  }
+  .dark-mode .tech-posts .post-content .excerpt,
+  .dark-mode .tech-posts .post-content .date {
+    color: var(--text-muted);
+  }
+  
+  /* Navigation & Interactions */
+  .dark-mode .nav-links li a {
+    color: var(--text-soft);
+  }
+  .dark-mode .nav-links li a:hover {
+    color: var(--highlight);
+  }
+  
+  /* Inputs and Links */
+  .dark-mode .search-form input,
+  .dark-mode .social-links a {
+    background-color: var(--bg-hover);
+    color: var(--text-soft);
+  }
+  
+  /* Highlighted Headings */
+  .dark-mode .card-link p,
+  .dark-mode .hero h1,
+  .dark-mode .hero p,
+  .dark-mode .breaking h2,
+  .dark-mode .politics-posts h2,
+  .dark-mode .crypto-posts h2,
+  .dark-mode .entertainment-posts h2,
+  .dark-mode .tech-posts h2,
+  .dark-mode .football-posts h2 {
+    color: var(--highlight);
+  }
+  
+  /* Images */
+  .dark-mode .category-cards .card img {
+    opacity: 0.8;
+  }
+  
+  /* Animation */
+  .post-card,
+  .post-card h3,
+  .post-card p {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  @media screen and (max-width:768px){
+    .theme-toggle {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    
+  }

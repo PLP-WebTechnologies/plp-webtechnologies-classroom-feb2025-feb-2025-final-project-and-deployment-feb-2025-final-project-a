@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #0f172a;
+    padding: 1rem 0;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #0f172a;
+  padding: 1rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    background-color: #0f172a;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-form input {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-form button {
+    background: none;
+    border: none;
+    color: #38bdf8;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-text {
+    font-size: 2.5rem; 
+    color: #38bdf8;  
+  }
+  
+  .logo-tagline {
+    font-size: 1.2rem; 
+    color: #f1f5f9;  
+    font-weight: 300; 
+    letter-spacing: 1px;  
+  }
+  
+  .logo:hover .logo-text {
+    color: #facc15;  
+  }
+  .logo:hover .logo-tagline {
+    color: #38bdf8; 
+  }
+  
+  
+  .menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+    
+
+.tech-posts {
+    padding: 2rem;
+    background-color: #ede9fe; /* Light indigo background for tech */
+}
+
+.tech-posts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1e293b;
+}
+
+.tech-posts .badge {
+    background-color: #8b5cf6; /* Vibrant indigo for tech badge */
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.tech-posts .posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tech-posts .post-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.tech-posts .post-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-posts .post-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tech-posts .post-content {
+    padding: 1rem;
+}
+
+.tech-posts .post-content h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+}
+
+.tech-posts .post-content .date {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.tech-posts .post-content .excerpt {
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 1rem;
+}
+
+.tech-posts .read-more {
+    text-decoration: none;
+    color: #8b5cf6;
+    font-weight: bold;
+}
+
+.tech-posts .load-more-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#load-more-tech {
+    padding: 10px 20px;
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#load-more-tech:hover {
+    background-color: #7c3aed;
+}
+.site-footer {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  
+  .social-links a {
+    color: #f1f5f9;
+    font-size: 1.4rem;
+    background: #1e293b;
+    padding: 0.6rem;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-links a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: #fff;
+      z-index: 20;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      background-color: #1e293b;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      padding: 0 1rem;
+      z-index: 10;
+      transition: max-height 0.3s ease-in-out;
+    }
+  
+   
+    .nav-links.active {
+      display: flex;
+      max-height: 500px;
+      padding: 1rem;
+    }
+  
+    .nav-links li {
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+  }
+  @media screen and (max-width: 429px) {
+    
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+  
+    header, .navbar {
+      width: 100vw;
+      padding: 0.5rem 1rem;
+      box-sizing: border-box;
+    }
+  
+    .logo-text {
+      font-size: 1.5rem !important; 
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 60vw; 
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    .logo-tagline {
+      font-size: 1rem !important;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  
+    
+    .nav-links li a {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.5rem;
+    }
+  }
+  

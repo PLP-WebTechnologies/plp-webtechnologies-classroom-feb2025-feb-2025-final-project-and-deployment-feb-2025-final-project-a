@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Crypto.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Blog App</title>
+    <meta name="description" content="Blog Web App .">
+    <meta name="keywords" content="Politics,Kenya, Web Development, Blog App, ">
+    <meta name="author" content="Miltonnare">
+</head>
+<body>
+    
+    <header>
+      
+        <nav class="navbar">
+          <div class="logo">
+            <span class="logo-text">Miltonnare's</span><span class="logo-tagline">Blog</span>
+          </div>
+
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="Tech.html">Tech Trends</a></li>
+                <li><a href="Crypto.html">Crypto</a></li>
+                <li><a href="Enter.html">Entertainment</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><form class="search-form" action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Search blog..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            <li><div class="theme-toggle">
+              <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="crypto-posts" id="crypto">
+        <h2>Crypto Trends & Updates</h2>
+        <div class="posts-container" id="posts-container">
+          <div class="post-card">
+            <span class="badge">Crypto</span>
+            <img src="images/Bitcoin.png" alt="Crypto News">
+            <div class="post-content">
+              <h3>Bitcoin Hits New High</h3>
+              <p class="date">May 2, 2025</p>
+              <p class="excerpt">Bitcoin surges past its previous record, sparking renewed interest in crypto markets and most people believe it will sparkle change in digital currency with...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <span class="badge">Crypto</span>
+            <img src="images/alt.png" alt="Crypto News">
+            <div class="post-content">
+              <h3>AltCoins are on the Move</h3>
+              <p class="date">April 28, 2025</p>
+              <p class="excerpt">Altcoins stable coins such as Ethereum are offers adoptability as their prices surges ...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <span class="badge">Crypto</span>
+            <img src="images/alt.png" alt="Crypto News">
+            <div class="post-content">
+              <h3>Are Meme Coins Collapsing?</h3>
+              <p class="date">May 14, 2025</p>
+              <p class="excerpt">Memes Coins trended in the last quarter of 2024 gaining a great momentum in Crypto Industries with approximated ...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <span class="badge">Crypto</span>
+            <img src="images/Bitcoin.png" alt="Crypto News">
+            <div class="post-content">
+              <h3>Did You Know?</h3>
+              <p class="date">May 14, 2025</p>
+              <p class="excerpt">Bitcoin has come a long way. 15 years ago you could buy 15 Bitcoin for 1 cent and a ...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+
+
+          <!-- Load more here -->
+        </div>
+      
+        <div class="load-more-container">
+          <button id="load-more-crypto">Load More</button>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Mr2Logic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/milton-odhiambo-14a662261"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+
+      <script src="Theme.js"></script>
+        <script src="Crypto.js"></script>
+      </body>

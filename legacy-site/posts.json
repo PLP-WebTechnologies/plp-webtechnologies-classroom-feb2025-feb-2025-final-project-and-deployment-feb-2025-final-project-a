@@ -1,0 +1,132 @@
+[
+  {
+    "category": "Tech",
+    "posts": [
+      {
+        "title": "AI Integration in Enterprise Infrastructure",
+        "image": "images/ai.png",
+        "date": "May 4, 2025",
+        "excerpt": "AI is becoming a foundational element in enterprise systems, with companies leveraging generative AI and specialized models for tasks like real-time simulations, enhancing efficiency in industries from healthcare to entertainment."
+      },
+      {
+        "title": "Biotech Advancements",
+        "image": "images/bio.png",
+        "date": "May 4, 2025",
+        "excerpt": "Breakthroughs in biology, chemistry, and IT are driving a nature-led biotech revolution, with applications moving from labs to everyday life, such as personalized medicine and sustainable materials."
+      },
+      {
+        "title": "Energy Demands of AI",
+        "image": "images/energy.png",
+        "date": "May 4, 2025",
+        "excerpt": "The AI revolution is increasing energy and hardware demands, making enterprise infrastructure a strategic differentiator as companies invest in sustainable data centers to support AI workloads."
+      },
+      {
+        "title": "Web3 and Decentralized Technologies",
+        "image": "images/web3.png",
+        "date": "May 4, 2025",
+        "excerpt": "Web3 technologies, including decentralized platforms and blockchain, are gaining traction for creating more immersive and distributed digital experiences, impacting sectors like media and finance."
+      },
+      {
+        "title": "Industry-Tech Convergence",
+        "image": "images/indus.png",
+        "date": "May 4, 2025",
+        "excerpt": "Enterprises are exploring intentional intersections between industries and technologies, such as combining AI with IoT or blockchain, to drive innovation and competitive advantage."
+      }
+    ]
+  },
+  {
+    "category": "Politics",
+    "posts": [
+      {
+        "title": "Social Media's Political Influence",
+        "image": "images/post7.png",
+        "date": "May 4, 2025",
+        "excerpt": "Social media platforms like TikTok and YouTube are increasingly shaping political discourse, with influencers and creators bypassing traditional media to engage younger audiences."
+      },
+      {
+        "title": "Crypto Industry Political Spending",
+        "image": "images/post8.png",
+        "date": "May 4, 2025",
+        "excerpt": "The cryptocurrency industry is significantly influencing U.S. elections through massive political contributions, particularly via super PACs like Fairshake, to push for favorable regulations."
+      },
+      {
+        "title": "Polarization and Media Trust",
+        "image": "images/post9.png",
+        "date": "May 4, 2025",
+        "excerpt": "Growing political polarization is eroding trust in mainstream media, with audiences turning to alternative platforms like X or Bluesky for news, prompting publishers to adapt."
+      },
+      {
+        "title": "Regulatory Push for Big Tech",
+        "image": "images/post10.png",
+        "date": "May 4, 2025",
+        "excerpt": "Governments worldwide are increasing scrutiny of Big Tech, with calls for regulation over political power, censorship, and data privacy, especially in the U.S. and EU..."
+      },
+      {
+        "title": "Election Interference via Crypto",
+        "image": "images/post12.png",
+        "date": "May 4, 2025",
+        "excerpt": "Cryptocurrencies are being used by illicit actors, particularly from Russia, to fund election interference and disinformation campaigns, raising concerns about digital security."
+      }
+    ]
+  },
+  {
+    "category": "Cryptocurrency",
+    "posts": [
+      {
+        "title": "Institutional Adoption of Bitcoin ETFs",
+        "image": "images/bitcoin.png",
+        "date": "May 4, 2025",
+        "excerpt": "Major financial institutions are increasingly adopting Bitcoin ETFs, signaling mainstream acceptance and driving crypto market growth."
+      },
+      {
+        "title": "Central Bank Digital Currencies (CBDCs)",
+        "image": "images/cbdc.png",
+        "date": "May 4, 2025",
+        "excerpt": "Governments are rolling out CBDCs to enhance financial inclusion, with countries like Britain regulating crypto to integrate it into existing financial systems."
+      },
+      {
+        "title": "Green Crypto Initiatives",
+        "image": "images/green.png",
+        "date": "May 4, 2025",
+        "excerpt": "Regenerative Finance (ReFi) and green crypto projects are aligning blockchain with sustainability goals, addressing environmental concerns and reshaping public perception."
+      },
+      {
+        "title": "Decentralized AI (deAI)",
+        "image": "images/decent.png",
+        "date": "May 4, 2025",
+        "excerpt": "The integration of blockchain and AI in deAI is fostering decentralized innovation, addressing ethical AI governance, and promoting secure, equitable tech solutions."
+      },
+      {
+        "title": "Tokenization of Assets",
+        "image": "images/alt.png",
+        "date": "May 4, 2025",
+        "excerpt": "Corporate giants are tokenizing illiquid assets like real estate and bonds, using blockchain to simplify trading and verify ownership, expanding crypto’s practical applications."
+      }
+    ]
+  },
+
+{
+"category": "Football",
+"posts": [
+  {
+    "title": "Injury Impacts",
+    "image": "images/foot7.png",
+    "date": "May 4, 2025",
+    "excerpt": "Barcelona’s Jules Kounde will miss the semifinal second leg against Inter Milan due to a hamstring injury sustained in a 3-3 first-leg draw..."
+  },
+  {
+    "title": "Potential For Six Teams",
+    "image": "images/foot2.png",
+    "date": "May 4, 2025",
+    "excerpt": "EPL Might secure 6 Places in the Champions Leage Next Season if Arsenal wins the Cup but the question is..."
+  },
+  {
+    "title": "Chelsea’s Strong Campaign",
+    "image": "images/foot8.png",
+    "date": "May 4, 2025",
+    "excerpt": "Chelsea’s 4-1 semifinal first-leg win over Djurgarden, with goals from Jadon Sancho and Nicolas Jackson, positions them as favorites to win the competition."
+  }
+
+]
+}
+]

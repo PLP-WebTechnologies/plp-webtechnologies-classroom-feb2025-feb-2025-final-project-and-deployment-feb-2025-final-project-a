@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+
+    <link rel="stylesheet" href="Enter.css">
+    <title>Blog App</title>
+    <meta name="description" content="Blog Web App .">
+    <meta name="keywords" content="Politics,Kenya, Web Development, Blog App,Entertainment ">
+    <meta name="author" content="Miltonnare">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <span class="logo-text">Miltonnare's</span><span class="logo-tagline">Blog</span>
+          </div>
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="Tech.html">Tech Trends</a></li>
+                <li><a href="Crypto.html">Crypto</a></li>
+                <li><a href="Enter.html">Entertainment</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><form class="search-form" action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Search blog..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <li><div class="theme-toggle">
+                  <i class="fas fa-moon" id="theme-icon"></i>
+                </div>
+            </li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="entertainment-posts" id="entertainment">
+        <h2>Entertainment</h2>
+        <div class="posts-container">
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/ent1.png" alt="Kenyan Film Festival">
+            <div class="post-content">
+              <h3>Kenyan Film Festival Attracts Global Eyes</h3>
+              <p class="date">April 25, 2025</p>
+              <p class="excerpt">
+                The Nairobi Film Festival has seen a surge in global entries, spotlighting local talent and authentic African narratives...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/ent2.png" alt="Music Awards">
+            <div class="post-content">
+              <h3>Top Artists Shine at Kenyan Music Awards</h3>
+              <p class="date">April 20, 2025</p>
+              <p class="excerpt">
+                Sauti Sol, Nadia Mukami, and others won big at this year’s national music awards, celebrating local sound innovation...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/ent3.png" alt="Comedy Night">
+            <div class="post-content">
+              <h3>Comedy Nights: The Rise of Stand-Up Culture</h3>
+              <p class="date">April 14, 2025</p>
+              <p class="excerpt">
+                Nairobi’s comedy clubs are booming with fresh talent turning everyday struggles into laughter-packed performances...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/ent4.png" alt="Comedy Night">
+            <div class="post-content">
+              <h3>Nyashinski 'Hayawani' Goes Viral</h3>
+              <p class="date">April 17, 2025</p>
+              <p class="excerpt">
+               Nyashinski Bagger goes <i>Hyawani</i> goes viral again. The trend has been due the great flow and lyrics brought by...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/ent6.png" alt="Comedy Night">
+            <div class="post-content">
+              <h3>Prince Indah Mega Pre-Wedding</h3>
+              <p class="date">May 3, 2025</p>
+              <p class="excerpt">
+              The Internet remains perplexed with the lavish and extravagant affair. The wedding showcased a Luo Culture from the grooming and ...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+
+        </div>
+      
+        <div class="load-more-container">
+          <button id="load-more-entertainment">Load More</button>
+        </div>
+      </section>
+      
+
+
+
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Mr2Logic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/milton-odhiambo-14a662261"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+      <script src="Enter.js"></script>
+      <script src="Theme.js"></script>
+</body>
+</html>

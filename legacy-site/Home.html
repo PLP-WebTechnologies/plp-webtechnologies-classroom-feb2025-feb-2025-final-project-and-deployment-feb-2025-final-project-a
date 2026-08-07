@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App Kenya</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="Home.css"> <!-- External CSS file -->
+    <meta name="description" content="Blog Web App .">
+    <meta name="keywords" content="Politics,Kenya, Web Development, Blog App, ">
+    <meta name="author" content="Miltonnare">
+    <meta property="og:title" content="theKenyansOversight Site">
+    <meta property="og:description" content="Bringing the current News at your doorstep. Stay tuned for breaking News...">
+    <meta property="og:image" content="/images/og.png">
+    <meta property="og:url" content="https://thekenyansoversight.netlify.app/">
+    <meta property="og:type" content="website">
+  
+    <!-- Twitter Card (Optional) -->
+    <meta name="twitter:card" content="At Your Doorstep">
+    <meta name="twitter:title" content="theKenyansOversight Site">
+    <meta name="twitter:description" content="Bringing the current News at your doorstep. Stay tuned for breaking News...">
+    <meta name="twitter:image" content="/images/og.png">
+</head>
+<body>
+    <header>
+      
+        <nav class="navbar">
+          <div class="logo">
+            <span class="logo-text">Miltonnare's</span><span class="logo-tagline">Blog</span>
+          </div>
+
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="Tech.html">Tech Trends</a></li>
+                <li><a href="Crypto.html">Crypto</a></li>
+                <li><a href="Enter.html">Entertainment</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><form class="search-form" action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Search blog..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            <li><div class="theme-toggle">
+              <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+            </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Kenyan Trends Blog</h1>
+        <p>Explore real-time updates on politics, tech, crypto, football, and more. Share your voice too!</p>
+        <p>TRUSTWORTHY AND UPTO DATE WITH THE CURRENT TRENDS IN DIVERSIFIED SPACE </p>
+    </section>
+
+    <section class="category">
+        <h2>Explore Categories</h2>
+        <div class="category-cards">
+          <a href="politics.html" class="card-link">
+          <div class="card">
+            <img src="images/Traore.png" alt="News" class="card-icon" />
+            <p>News</p>
+          </a>
+          </div>
+          <a href="Football.html" class="card-link">
+          <div class="card">
+            <img src="images/Yamal.png" alt="Football" class="card-icon" />
+            <p>Football</p>
+          </a>
+          </div>
+          <a href="Crypto.html" class="card-link">
+          <div class="card">
+            <img src="images/Bitcoin.png" alt="Crypto" class="card-icon" />
+            <p>Crypto</p>
+          </a>
+          </div>
+          <a href="Tech.html" class="card-link">
+          <div class="card">
+            <img src="images/Tech.png" alt="Tech" class="card-icon" />
+            <p>Tech</p>
+          </a>
+          </div>
+          <a href="Enter.html" class="card-link">
+          <div class="card">
+            <img src="images/Burna.png" alt="Entertainment" class="card-icon" />
+            <p>Entertainment</p>
+          </div>
+        </a>
+        </div>
+      </section>
+      
+
+      <section class="breaking">
+        <h2><span class="icon">🗞️</span> Breaking News</h2>
+        <div class="ticker-wrapper">
+          <div class="ticker">
+            <span>⚡ Market hits all-time high | 📰 New regulations announced | 🚨 Major tech breakthrough this week | 🏆 Team X wins championship! | 🗣️ Raila Speaks, Kenya Listens|🏀The Next Face of Champions League </span>
+          </div>
+          
+        </div>
+      </section>
+      <section class="latest-news">
+        <h2>Latest News</h2>
+        <div id="news-feed"></div>
+      </section>
+      
+      
+      <section class="contacts" id="contacts">
+        <h2><span class="icon">📬</span> Contact Us</h2>
+        <p>
+          For collaborations, testimonials, or inquiries, reach out to us at 
+          <a href="https://x.com/Mr2Logic " target="_blank">info@kenyablogapp.com</a>.
+        </p>
+      </section>
+      
+
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Mr2Logic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/milton-odhiambo-14a662261"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    <script src="Theme.js"></script>
+    <script src="Home.js"></script>
+</body>
+</html>

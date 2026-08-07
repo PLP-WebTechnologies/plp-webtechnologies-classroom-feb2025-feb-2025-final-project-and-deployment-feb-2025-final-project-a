@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Politics.css">
+    <link rel="stylesheet" href="theme.css">
+    <title>Blog App Kenya</title>
+    <meta name="description" content="Blog Web App .">
+    <meta name="keywords" content="Politics,Kenya, Web Development, Blog App,Parliament,GEN-Z ">
+    <meta name="author" content="Miltonnare">
+</head>
+<body>
+    <header>
+      
+        <nav class="navbar">
+          <div class="logo">
+            <span class="logo-text">Miltonnare's</span><span class="logo-tagline">Blog</span>
+          </div>
+
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="Tech.html">Tech Trends</a></li>
+                <li><a href="Crypto.html">Crypto</a></li>
+                <li><a href="Enter.html">Entertainment</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><form class="search-form" action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Search blog..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            <li><div class="theme-toggle">
+              <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+            </li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="politics-posts" id="politics">
+        <h2>Latest in Kenyan Politics</h2>
+      
+        <div class="posts-container" id="posts-container">
+          <div class="post-card">
+            <div class="badge">Politics</div>
+            <img src="images/post5.png" alt="Politics Thumbnail">
+            <div class="post-content">
+              <h3>Gachagua aligns himself ahead of 2027 Elections</h3>
+              <p class="date">May 3, 2025</p>
+              <p class="excerpt">Impeached Deputy president aligns himself ahead of 2027 as he promises to vie...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <div class="badge">Politics</div>
+            <img src="images/post4.png" alt="Politics Thumbnail">
+            <div class="post-content">
+              <h3>Matiangi Tours Gusii Land</h3>
+              <p class="date">May 3, 2025</p>
+              <p class="excerpt">Former Cabinet Secretary Tours Gusii Land to Popularise himself ahead of 2027 Elections...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <div class="badge">Politics</div>
+            <img src="images/post1.png" alt="Politics Thumbnail">
+            <div class="post-content">
+              <h3>New Policy Shakeup</h3>
+              <p class="date">April 28, 2025</p>
+              <p class="excerpt">The latest policy updates by the government are expected to change the political landscape drastically...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <div class="badge">Politics</div>
+            <img src="images/post2.png" alt="Politics Thumbnail">
+            <div class="post-content">
+              <h3>Youth in Parliament</h3>
+              <p class="date">April 25, 2025</p>
+              <p class="excerpt">A growing number of youth are taking leadership positions in Kenya’s Parliament...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <div class="badge">Politics</div>
+            <img src="images/post3.png" alt="Politics Thumbnail">
+            <div class="post-content">
+              <h3>Finance Bill 2025</h3>
+              <p class="date">May 25, 2025</p>
+              <p class="excerpt">The Kenyan Finance Bill 2025, as of today, May 4, 2025, is being viewed as a bold budget with no new taxes, 
+                aiming to ease the cost of living and restore public trust...</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <!-- More post cards can be loaded via JS -->
+        </div>
+      
+        <!-- Load More Button -->
+        <div class="load-more-container">
+          <button id="load-more">Load More</button>
+        </div>
+      </section>
+      
+      
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Mr2Logic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/milton-odhiambo-14a662261"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    <script src="politics.js"></script>
+    <script src="Theme.js"></script>
+</body>
+</html>
